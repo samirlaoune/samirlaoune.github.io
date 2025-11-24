@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(/img/bgportifolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 50px 5%;
+}
+
+.main-container {
+    border-radius: 30px;
+    padding: 58px 5%;
+    justify-content: center;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    animation: zoom-in 1s ease forwards;
+    transform: scale(0);
+
+}
+
+@keyframes zoom-in {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.header {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.nav-back {
+    padding: 5px;
+}
+
+.nav-back a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.tittle {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.tittle h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.texto-sobre {
+    text-align: center;
+    color: #fff;
+    line-height: 2;
+    font-size: 16px;
+}

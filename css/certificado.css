@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(/img/bgportifolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 710vh;
+    padding: 50px 5%;
+}
+
+img {
+    width: 100%;      /* imagem ocupa toda a largura da box */
+    height: auto;     /* sem distorcer */
+    display: block;
+}
+
+.main-container > div {
+    width: 48%;
+}
+
+
+
+.header {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.nav-back {
+    padding: 5px;
+}
+
+.nav-back a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.tittle {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.tittle h1 {
+    font-family: "Ms Madi", cursive;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.main-container {
+    border-radius: 30px;
+    display: flex;
+    padding: 58px 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+}
+
+.main-container img {
+    transition: 0.3s;
+}
+
+.main-container img:hover {
+    border: 2px solid #fff;
+    transform: scale(1.03);
+}
+
+.box1 {
+    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box1 p {
+    color: #fff;
+    font-style: italic;
+}
+
+.box2 {
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box2 p {
+    color: #fff;
+    font-style: italic;
+}
+
+.box3 {
+    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box3 p {
+    color: #fff;
+    font-style: italic;
+}
+
+.box4 {
+    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box4 p {
+    color: #fff;
+    font-style: italic;
+}
+
+.box5 {
+    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box5 p {
+    color: #fff;
+    font-style: italic;
+}
+
+.box6 {
+    
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.box6 p {
+    color: #fff;
+    font-style: italic;
+}
+
+.box7 {
+    
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.box7 p {
+    color: #fff;
+    font-style: italic;
+}
