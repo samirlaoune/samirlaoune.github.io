@@ -161,3 +161,17 @@ p {
     }
 }
 
+/* respon */
+
+@media (max-width: 480px) {
+    .tittle {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .box-projeto {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+}
+

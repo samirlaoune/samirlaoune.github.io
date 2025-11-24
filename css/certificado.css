@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 710vh;
+    min-height: 100vh;
     padding: 50px 5%;
 }
 
