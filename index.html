@@ -28,7 +28,7 @@
         <section class="home animated">
             <div class="home-detail">
                 <h1>Samir Laoune</h1>
-                <h2>Analista e Desenvolvedor de Softwares</h2>
+                <h2 id="typing">Analista e Desenvolvedor de Softwares</h2>
                 <p>
                 Apaixonado por tecnologia desde cedo, estou em constante aprendizado no desenvolvimento de sistemas e 
                 soluções digitais. Formado em Análise e Desenvolvimento de Sistemas, busco transformar ideias em 
@@ -36,7 +36,7 @@
                 </p>
             
                 <div class="download-social">
-                    <a href="/curriculo-assets/CvSamir.pdf" download="curriculo.samir.pdf" class="btn">Download CV</a>
+                    <a href="curriculo-assets/CV-Samir0.pdf" download="curriculo.samir.pdf" class="btn">Download CV</a>
                     
                     <div class="social-icons">
                         <a href="https://github.com/samirlaoune" target="_blank" rel="noopener noreferrer">
@@ -66,5 +66,47 @@
     <footer>
         Developed by Samir Laoune.
     </footer>
+
+ <!-- JS -->
+    <script>
+    const textos = [
+        "Analista e Desenvolvedor de Softwares",
+        "Desenvolvedor Frontend",
+        "Suporte em TI"
+    ];
+
+    let indexTexto = 0;
+    let indexLetra = 0;
+    let apagando = false;
+
+    const elemento = document.getElementById("typing");
+
+    function digitar() {
+        let textoAtual = textos[indexTexto];
+
+        if (!apagando) {
+            elemento.textContent = textoAtual.substring(0, indexLetra++);
+            
+            if (indexLetra > textoAtual.length) {
+                apagando = true;
+                setTimeout(digitar, 1200); // Pausa depois de escrever
+                return;
+            }
+        } else {
+            elemento.textContent = textoAtual.substring(0, indexLetra--);
+
+            if (indexLetra < 0) {
+                apagando = false;
+                indexTexto = (indexTexto + 1) % textos.length; // Vai para o próximo
+            }
+        }
+
+        const velocidade = apagando ? 60 : 100;
+        setTimeout(digitar, velocidade);
+    }
+
+    digitar();
+</script>
+</script>
 </body>
 </html>
