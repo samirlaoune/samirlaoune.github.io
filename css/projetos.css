@@ -165,8 +165,9 @@ p {
 
 @media (max-width: 480px) {
     .tittle {
-        margin-right: 0;
+        margin-right: 80px;
         text-align: center;
+        
     }
 
     .box-projeto {
