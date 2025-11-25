@@ -218,6 +218,7 @@ footer {
         align-items: center;
         padding: 0;
         line-height: 2;
+       
     }
 
     .nav-bar {
@@ -245,6 +246,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 80px;
     }
 
     .home-img .img-box {
@@ -299,7 +301,7 @@ footer {
     }
 
     .img-box img {
-        transform: translate(0, 0);
+        transform: translate(18%, 2%);
     }
 
     footer {
